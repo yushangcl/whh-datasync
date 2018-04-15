@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.itbat</groupId>
+    <artifactId>whh-datasync</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <com.alibaba.dubbo.version>2.8.4</com.alibaba.dubbo.version>
+        <org.springframework.version>4.3.8.RELEASE</org.springframework.version>
+        <logging.log4j.version>2.8.2</logging.log4j.version>
+    </properties>
+
+    <!--子模块-->
+    <modules>
+        <module>datasync-biz</module>
+        <module>datasyn-ccommon</module>
+        <module>datasync-dao</module>
+        <module>datasync-web</module>
+        <module>datasync-common</module>
+    </modules>
+
+    <!-- 上传到私服 -->
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Nexus Release Repository</name>
+            <url>http://123.207.119.211:8071/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Nexus Snapshot Repository</name>
+            <url>http://123.207.119.211:8071/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+</project>
