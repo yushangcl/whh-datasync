@@ -28,6 +28,7 @@
         <module>datasync-dao</module>
         <module>datasync-web</module>
         <module>datasync-common</module>
+        <module>datasyn-couter</module>
     </modules>
 
     <!-- 上传到私服 -->
