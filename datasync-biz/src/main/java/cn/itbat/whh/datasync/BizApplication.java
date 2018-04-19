@@ -15,9 +15,9 @@ public class BizApplication {
     public static void main(String[] args) throws InterruptedException{
         Logger logger = LoggerFactory.getLogger(BizApplication.class);
 
-        logger.info(">>>>> spring-boot 正在启动 <<<<<");
+        logger.info(">>>>> datasync 正在启动 <<<<<");
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring-config.xml");
-        logger.info(">>>>> spring-boot 启动完成 <<<<<");
+        logger.info(">>>>> datasync 启动完成 <<<<<");
         Thread.sleep(Long.MAX_VALUE);
 
     }

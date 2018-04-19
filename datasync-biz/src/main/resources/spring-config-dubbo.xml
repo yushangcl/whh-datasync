@@ -29,7 +29,7 @@
     <dubbo:service interface="cn.itbat.whh.datasync.service.BaDefinedCodeService" ref="baDefinedCodeService"
                    version="1.0.0.dev" group="impl"/>
     <!-- 具体服务接口的实现 -->
-    <bean id="cmUserService" class="cn.itbat.whh.datasync.service.impl.BaDefinedCodeImpl" />
+    <bean id="baDefinedCodeService" class="cn.itbat.whh.datasync.service.impl.BaDefinedCodeServiceImpl" />
 
 
     <!-- dubbo_consumer -->

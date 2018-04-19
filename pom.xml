@@ -24,10 +24,9 @@
     <!--子模块-->
     <modules>
         <module>datasync-biz</module>
-        <module>datasyn-ccommon</module>
+        <module>datasync-common</module>
         <module>datasync-dao</module>
         <module>datasync-web</module>
-        <module>datasync-common</module>
     </modules>
 
     <!-- 上传到私服 -->

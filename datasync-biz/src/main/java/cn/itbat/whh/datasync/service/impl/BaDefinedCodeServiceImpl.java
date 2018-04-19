@@ -8,5 +8,9 @@ import org.springframework.stereotype.Service;
  * @date 2018-04-15 下午9:43
  **/
 @Service
-public class BaDefinedCodeImpl implements BaDefinedCodeService {
+public class BaDefinedCodeServiceImpl implements BaDefinedCodeService {
+    @Override
+    public void test() throws Exception{
+
+    }
 }
