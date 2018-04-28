@@ -6,4 +6,5 @@ package cn.itbat.whh.datasync.service;
  * @date 2018-04-15 下午9:42
  **/
 public interface BaDefinedCodeService {
+    void test() throws Exception;
 }

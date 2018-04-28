@@ -9,7 +9,7 @@
     <context:property-placeholder location="classpath:service-config.properties" ignore-unresolvable="true" />
 
     <!-- 提供方应用信息，用于计算依赖关系 -->
-    <dubbo:application name="whh-usercenter"  />
+    <dubbo:application name="whh-datasunc"  />
 
     <!-- 注册中心服务地址 -->
     <dubbo:registry id="zookeeper" protocol="zookeeper" address="${dubbo.registry.address}" />
@@ -23,13 +23,13 @@
         connections="${dubbo.provider.connections}"/>
 
     <!-- 通过注解发布服务 -->
-    <dubbo:annotation package="cn.itbat.whh.usercenter.service"/>
+    <dubbo:annotation package="cn.itbat.whh.datasunc.service"/>
 
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:service interface="cn.itbat.whh.datasync.service.BaDefinedCodeService" ref="baDefinedCodeService"
                    version="1.0.0.dev" group="impl"/>
     <!-- 具体服务接口的实现 -->
-    <bean id="cmUserService" class="cn.itbat.whh.datasync.service.impl.BaDefinedCodeImpl" />
+    <bean id="baDefinedCodeService" class="cn.itbat.whh.datasync.service.impl.BaDefinedCodeServiceImpl" />
 
 
     <!-- dubbo_consumer -->
